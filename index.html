@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <title>Jogo_Multijogador</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css" type="text/css">
+  </head>
+  <body>
+
+    <div class="game-container">
+    </div>
+    <div class="player-info">
+      <div>
+        <label for="player-name">Seu Nome</label>
+        <input id="player-name" maxlength="10" type="text" />
+      </div>
+      <div>
+        <button id="player-color">Mudar Cor</button>
+      </div>
+    </div>
+  
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <script>
+      const firebaseConfig = {
+    apiKey: "AIzaSyBfmYdA27i0DXc9xkqQCh0LAUa0s923hPM",
+    authDomain: "jogo-multijogador-e4eec.firebaseapp.com",
+    databaseURL: "https://jogo-multijogador-e4eec-default-rtdb.firebaseio.com",
+    projectId: "jogo-multijogador-e4eec",
+    storageBucket: "jogo-multijogador-e4eec.appspot.com",
+    messagingSenderId: "211369859969",
+    appId: "1:211369859969:web:063cbc1702bf7f5b536680"
+  };
+      firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <script src="/KeyPressListener.js"></script>
+    <script src="/app.js"></script>
+  </body>
+</html>
